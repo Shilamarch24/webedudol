@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Login & Stop Judi Online</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome untuk ikon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ========== BAGIAN LOGIN (Desktop - 1) ========== -->
+  <section class="login-section">
+    <!-- Logo di kiri atas -->
+    <img src="download (5).png" alt="Logo" class="logo">
+
+    <div class="container">
+      <!-- Daun kiri -->
+      <img src="download (3).png" alt="Daun Kiri" class="leaf-left">
+
+      <!-- Kotak Login -->
+      <div class="login-box">
+        <h2>USER LOGIN</h2>
+
+        <!-- Input username -->
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="username">
+        </div>
+
+        <!-- Input password -->
+        <div class="input-group">
+          <input type="password" id="password" placeholder="password">
+          <i class="fas fa-lock"></i>
+          <span class="toggle-password" onclick="togglePassword()">
+            <i class="fas fa-eye"></i>
+          </span>
+        </div>
+
+        <!-- Tombol login -->
+        <button class="btn">LOGIN</button>
+      </div>
+
+      <!-- Daun kanan -->
+      <img src="download (2).png" alt="Daun Kanan" class="leaf-right">
+    </div>
+  </section>
+
+  <!-- ========== BAGIAN EDUKASI (Desktop - 2) ========== -->
+  <section class="edukasi-section">
+    <!-- Navbar -->
+    <header>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class="fas fa-search"></i>
+      </div>
+      <nav>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT US</a>
+        <a href="#">EDUCATION</a>
+        <a href="#">SARAN</a>
+      </nav>
+    </header>
+
+    <!-- Konten -->
+    <main class="content">
+      <!-- Kolom kiri -->
+      <div class="left">
+        <p>
+          Judi online dapat menyebabkan kerugian finansial, kecanduan, 
+          dan gangguan mental seperti stres atau depresi. Kebiasaan ini 
+          juga merusak hubungan sosial, memicu tindakan kriminal, dan 
+          berisiko hukum karena ilegal di Indonesia, sementara peluang 
+          menang sangat kecil karena sistem menguntungkan bandar.
+        </p>
+      </div>
+
+      <!-- Kolom kanan -->
+      <div class="right">
+        <h1 class="stop">STOP</h1>
+        <h2>JUDI ONLINE</h2>
+        <img src="download (1).png" alt="Stop Judi Online">
+      </div>
+    </main>
+  </section>
+
+  <!-- Script Show/Hide Password -->
+  <script>
+    function togglePassword() {
+      const passwordInput = document.getElementById("password");
+      const icon = document.querySelector(".toggle-password i");
+
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+      } else {
+        passwordInput.type = "password";
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+      }
+    }
+  </script>
+</body>
+</html>
+  <<!-- ========== BAGIAN MENU IKON (dengan gambar) ========== -->
+<section class="menu-section">
+  <!-- Navbar kedua -->
+  <header>
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <i class="fas fa-search"></i>
+    </div>
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#">ABOUT US</a>
+      <a href="#">EDUCATION</a>
+      <a href="#">SARAN</a>
+    </nav>
+  </header>
+
+  <!-- Menu Ikon dengan gambar -->
+  <div class="menu-icons">
+    <div class="menu-item">
+      <img src="download (6).png" alt="Teman">
+      <p>Teman</p>
+    </div>
+    <div class="menu-item">
+      <img src="download (7).png" alt="Edukasi">
+      <p>Edukasi</p>
+    </div>
+    <div class="menu-item">
+      <img src="download (8).png" alt="Konsultasi">
+      <p>Konsultasi</p>
+    </div>
+    <div class="menu-item">
+      <img src="download (9).png" alt="Kotak Saran">
+      <p>Kotak Saran</p>
+    </div>
+    <div class="menu-item">
+      <img src="download (10).png" alt="Informasi">
+      <p>Informasi</p>
+    </div>
+  </div>
+</section>
+<!-- ========== BAGIAN PENJELASAN FITUR ========== -->
+ <!-- Navbar di atas fitur -->
+<header>
+  
+  <div class="search-box">
+    <input type="text" placeholder="Search...">
+    <i class="fas fa-search"></i>
+  </div>
+  <nav>
+    <a href="#">HOME</a>
+    <a href="#">ABOUT US</a>
+    <a href="#">EDUCATION</a>
+    <a href="#">SARAN</a>
+  </nav>
+</header>
+
+<section class="fitur-section">
+  <div class="fitur-item">
+    <img src="download (6).png" alt="Teman">
+    <div class="fitur-box">
+      <p><i>Pada bagian teman pengguna dapat mencari teman untuk dapat saling menyemangati dan menginspirasi</i></p>
+    </div>
+  </div>
+
+  <div class="fitur-item">
+    <img src="download (7).png" alt="Edukasi">
+    <div class="fitur-box">
+      <p><i>Terdapat edukasi tentang bahaya judol dan langkah langkah pencegahannya</i></p>
+    </div>
+  </div>
+
+  <div class="fitur-item">
+    <img src="download (10).png" alt="Informasi">
+    <div class="fitur-box">
+      <p><i>Informasi mencangkup seputar informasi terkait website mulai dari langkah awal penggunaan sampai akhir</i></p>
+    </div>
+  </div>
+
+  <div class="fitur-item">
+    <img src="download (8).png" alt="Konsultasi">
+    <div class="fitur-box">
+      <p><i>Lakukan tindak lanjut dengan berkonsultasi dengan para ahli untuk dapat mencegah kecanduan judi online</i></p>
+    </div>
+  </div>
+</section>
+
+  <header class="navbar">
+    <h2>Daftar Teman</h2>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="teman.html">Teman</a>
+      <a href="edukasi.html">Edukasi</a>
+      <a href="saran.html">Saran</a>
+    </nav>
+  </header>
+
+  <main class="teman-page">
+    <section class="teman-list">
+      <h3><img src="icon-teman.png" alt="icon"> TEMAN</h3>
+      <div class="grid-teman">
+        <a href="chat.html" class="teman-item"><img src="download (11).png"><p>TEMAN</p></a>
+        <a href="chat.html" class="teman-item"><img src="download (11).png"><p>TEMAN</p></a>
+        <a href="chat.html" class="teman-item"><img src="download (11).png"><p>TEMAN</p></a>
+        <a href="chat.html" class="teman-item"><img src="download (11).png"><p>TEMAN</p></a>
+        <a href="chat.html" class="teman-item"><img src="download (11).png"><p>TEMAN</p></a>
+        <a href="chat.html" class="teman-item"><img src="download (11).png"><p>TEMAN</p></a>
+      </div>
+    </section>
+
+    <aside class="chat-panel">
+      <h3>Chat Aktif</h3>
+      <p>Pilih teman untuk mulai chat.</p>
+    </aside>
+  </main>
+
+  <section class="rekomendasi">
+    <h3>REKOMENDASI TEMAN</h3>
+    <div class="grid-rekomendasi">
+      <div class="user-card"><img src="download (11).png"><p>RUBY</p></div>
+      <div class="user-card"><img src="download (11).png"><p>BIYAN</p></div>
+      <div class="user-card"><img src="download (11).png"><p>NATHAN</p></div>
+      <div class="user-card"><img src="download (11).png"><p>KEYLA</p></div>
+      <div class="user-card"><img src="download (11).png"><p>LUBY</p></div>
+    </div>
+  </section>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Teman</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="detail-container">
+    <a href="teman.html" class="back-btn">← Kembali</a>
+    <div class="profile-card">
+      <img src="user.png">
+      <h2>Nama Teman</h2>
+      <p>📍 Lokasi: Jakarta</p>
+      <p>🎓 Pendidikan: Mahasiswa</p>
+      <p>📧 teman@example.com</p>
+      <div class="profile-actions">
+        <a href="chat.html" class="btn chat">Chat</a>
+        <button class="btn add">Tambah Teman</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2>Chat</h2>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="teman.html">Teman</a>
+      <a href="edukasi.html">Edukasi</a>
+      <a href="saran.html">Saran</a>
+    </nav>
+  </header>
+
+  <main class="chat-container">
+    <div class="chat-box">
+      <div class="chat-message friend">Hai, apa kabar?</div>
+      <div class="chat-message me">Baik, kamu gimana?</div>
+      <div class="chat-message friend">Aku juga baik 👍</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" placeholder="Tulis pesan...">
+      <button>Kirim</button>
+    </div>
+  </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edukasi</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Pakai icon dari fontawesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="judul">
+      <i class="fas fa-lightbulb"></i> EDUKASI
+    </div>
+
+    <div class="cards">
+      <!-- Card Video -->
+      <div class="card">
+        <a href="https://www.youtube.com/" target="_blank">
+          <img src="https://i.ibb.co/bmrw2sd/video-edukasi.jpg" alt="Video Edukasi">
+        </a>
+        <p>Video Edukasi</p>
+      </div>
+
+      <!-- Card Artikel -->
+      <div class="card">
+        <a href="https://www.liputan6.com/tag/edukasi" target="_blank">
+          <img src="https://i.ibb.co/xXgR9Fg/artikel-edukasi.jpg" alt="Artikel Edukasi">
+        </a>
+        <p>Artikel Edukasi</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+

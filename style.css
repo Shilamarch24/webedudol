@@ -1,0 +1,613 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d4b383;
+}
+
+/* ================== BAGIAN LOGIN ================== */
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-color: #d4b383;
+}
+
+/* Logo kiri atas */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 80px;
+}
+
+/* Container login */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Kotak Login */
+.login-box {
+  background: #f6f0e8;
+  padding: 40px;
+  border-radius: 30px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  border: 3px solid #d9b98c;
+}
+
+.login-box h2 {
+  margin-bottom: 30px;
+  color: #9c7d48;
+  font-weight: bold;
+}
+
+/* Input */
+.input-group {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  background: #c79e4b;
+  border-radius: 5px;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.input-group i {
+  color: black;
+  font-size: 18px;
+  margin: 0 8px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 10px;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+.input-group input::placeholder {
+  color: white;
+}
+
+/* Toggle password */
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: black;
+}
+
+.toggle-password i {
+  font-size: 16px;
+}
+
+/* Tombol Login */
+.btn {
+  width: 100%;
+  background: #c79e4b;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #a67b34;
+}
+
+/* Daun kiri dan kanan */
+.leaf-left {
+  position: absolute;
+  left: -90px;
+  width: 120px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.leaf-right {
+  position: absolute;
+  right: -90px;
+  width: 120px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ================== BAGIAN EDUKASI ================== */
+.edukasi-section {
+  background-color: #d4b383;
+  padding-bottom: 30px; /* dikurangi biar gak kebawah banget */
+}
+
+/* Section konten utama */
+.section {
+  border-top: 1px solid black;
+  padding-top: 10px;   /* dari 40px → 10px */
+  margin-top: 15px;    /* dari 40px → 15px */
+  margin-bottom: 25px; /* lebih rapat */
+}
+
+/* Search bar */
+.search-container {
+  margin: 10px auto; /* dari 25px → 10px */
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background: #f6f0e8;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+}
+
+.search-box i {
+  margin-left: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+/* Konten */
+.content {
+  display: flex;
+  padding: 30px; /* dari 40px → 30px */
+  min-height: calc(100vh - 100px);
+}
+
+.left {
+  flex: 1;
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: black;
+}
+
+.right {
+  flex: 1;
+  text-align: center;
+}
+
+.stop {
+  font-size: 50px;
+  color: red;
+  font-weight: bold;
+  transform: rotate(-10deg);
+  border: 3px solid red;
+  display: inline-block;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+}
+
+.right h2 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.right img {
+  width: 150px;
+}
+
+/* ================== BAGIAN MENU IKON (gambar) ================== */
+.menu-section {
+  background-color: #d4b383;
+  padding: 20px 40px; /* dari 30px → 20px */
+}
+
+.menu-section nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.menu-section nav a:hover {
+  text-decoration: underline;
+}
+
+/* Grid menu ikon: 3 di atas, 2 di bawah */
+.menu-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px 50px; /* lebih rapat */
+  text-align: center;
+  margin-top: 20px; /* dari 50px → 20px */
+  justify-items: center;
+}
+
+/* Gambar ikon */
+.menu-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Teks ikon */
+.menu-item p {
+  font-size: 16px;
+  font-style: italic;
+  color: black;
+  margin: 0;
+}
+
+/* ================== BAGIAN PENJELASAN FITUR ================== */
+header {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 10px 0; /* lebih rapat */
+  border-bottom: 1px solid black;
+  margin-bottom: 20px; /* dari 30px → 20px */
+}
+
+.fitur-section {
+  background-color: #d4b383;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 30px 40px; /* dari 50px 60px → 30px 40px */
+}
+
+.fitur-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.fitur-item img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.fitur-box {
+  background-color: #c4a46d;
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.fitur-box p {
+  font-size: 14px;
+  color: black;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Navbar utama */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 10px 30px; /* dari 15px 40px → 10px 30px */
+  margin-bottom: 20px; /* dari 40px → 20px */
+}
+
+/* Search bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px;
+}
+
+.search-container button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Menu link */
+nav a {
+  margin-left: 20px; /* lebih rapat */
+  font-style: italic;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Jarak antar section */
+section {
+  margin: 25px 0; /* dari 40px → 25px */
+}
+
+/* Tambahkan padding pada header dan footer */
+header, footer {
+  padding: 15px 0; /* dari 20px → 15px */
+}
+
+/* Jarak antar ikon di tengah */
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* dari 40px → 30px */
+  margin-top: 25px; /* dari 40px → 25px */
+}
+
+/* Jarak antar konten bagian bawah */
+.bawah-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* dari 100px → 80px */
+  margin-top: 25px; /* dari 40px → 25px */
+}
+/* ======== FIX POSISI BIAR NAIK KE ATAS ======== */
+
+/* Rapetin navbar */
+.navbar {
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+  padding: 8px 20px !important;
+}
+
+/* Rapetin search bar */
+.search-container {
+  margin-top: 5px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Rapetin ikon */
+.menu-icons {
+  margin-top: 10px !important;
+  gap: 20px 30px !important;
+}
+
+/* Rapetin section agar gak jauh */
+.section {
+  margin-top: 10px !important;
+  padding-top: 10px !important;
+}
+
+/* Rapetin header atas */
+header {
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+  padding: 10px 0 !important;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #d4b383;
+}
+
+/* Container utama */
+.teman-container {
+  display: flex;
+  height: 70vh;
+}
+
+/* Kolom kiri */
+.teman-kiri {
+  flex: 2;
+  background: #d4b383;
+  padding: 20px;
+}
+
+/* Header teman */
+.teman-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.teman-header img {
+  width: 40px;
+  height: 40px;
+}
+
+.teman-header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+/* Grid daftar teman */
+.teman-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 40px;
+}
+
+.teman-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.teman-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* Kolom kanan */
+.teman-kanan {
+  flex: 1;
+  background: #5b3524; /* coklat tua */
+}
+
+/* Rekomendasi teman */
+.rekomendasi-container {
+  background: #d4b383;
+  border-top: 1px solid black;
+  padding: 15px 20px;
+}
+
+.rekomendasi-container h3 {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+}
+
+.rekomendasi-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user-card {
+  text-align: center;
+}
+
+.user-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+/* ===== CHAT PAGE ===== */
+.chat-container { display:flex; flex-direction:column; height:90vh; padding:20px; }
+.chat-box { flex:1; background:#f0e4d7; padding:15px; border-radius:10px; overflow-y:auto; margin-bottom:15px; }
+.chat-message { margin-bottom:10px; padding:8px 12px; border-radius:8px; max-width:70%; }
+.chat-message.friend { background:#c79e4b; align-self:flex-start; }
+.chat-message.me { background:#9c7d48; color:white; align-self:flex-end; }
+.chat-input { display:flex; gap:10px; }
+.chat-input input { flex:1; padding:10px; border-radius:8px; border:1px solid #ccc; }
+.chat-input button { padding:10px 15px; background:#c79e4b; border:none; border-radius:8px; cursor:pointer; }
+
+/* ===== DETAIL TEMAN ===== */
+.detail-container { padding:30px; background:#d4b383; height:100vh; }
+.back-btn { display:inline-block; margin-bottom:20px; text-decoration:none; color:black; font-weight:bold; }
+.profile-card { background:#fff8f0; padding:30px; border-radius:12px; width:300px; box-shadow:0 4px 8px rgba(0,0,0,0.2); text-align:center; }
+.profile-card img { width:100px; height:100px; border-radius:50%; margin-bottom:15px; }
+.profile-actions { margin-top:20px; display:flex; justify-content:space-around; }
+.btn { padding:10px 15px; border:none; border-radius:8px; cursor:pointer; font-weight:bold; }
+.btn.chat { background:#5b3524; color:white; text-decoration:none; }
+.btn.add { background:#c28c6a; color:white; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #d4b383;
+}
+
+.container {
+  padding: 20px;
+  border: 3px solid #2196F3;
+  margin: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.judul {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  animation: slideDown 1s ease-out;
+}
+
+.judul i {
+  margin-right: 10px;
+  font-size: 28px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-in-out forwards;
+}
+
+.card:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.card:nth-child(2) {
+  animation-delay: 0.8s;
+}
+
+.card img {
+  width: 200px;
+  height: 280px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 🔥 Animasi */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
